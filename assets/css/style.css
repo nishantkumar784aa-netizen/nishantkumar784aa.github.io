@@ -1,188 +1,36 @@
-<!-- ===============================
- PROFESSIONAL MULTI-PAGE PORTFOLIO WEBSITE
- Name: Nishant Kumar
- Role: Video Editor | Student
- Hosting: GitHub Pages (FREE)
- Editable: YES
-================================== -->
+/* ===============================
+   PORTFOLIO SECTION FIX
+================================ */
+.page {
+  background: #0f172a;
+}
 
-<!-- ===============================
- FILE STRUCTURE (IMPORTANT)
- ===============================
- /
- ├── index.html
- ├── about.html
- ├── portfolio.html
- ├── contact.html
- ├── assets/
- │   ├── css/style.css
- │   ├── js/main.js
- │   └── images/
- │       ├── hero.jpg
- │       ├── profile.jpg
- │       └── project1.jpg
- -->
+.grid {
+  margin-top: 40px;
+}
 
-<!-- ===============================
- index.html (HOME PAGE)
- =============================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nishant Kumar | Video Editor</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <h1>Nishant Kumar</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+.card {
+  position: relative;
+  height: 220px;
+  background: linear-gradient(135deg, #020617, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #e5e7eb;
+  cursor: pointer;
+}
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Video Editor & Creative Storyteller</h2>
-      <p>Cinematic edits • Reels • YouTube videos</p>
-      <a href="portfolio.html" class="btn">View My Work</a>
-    </div>
-  </section>
+.card::after {
+  content: "View Project";
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  font-size: 0.9rem;
+  color: #38bdf8;
+  transition: opacity 0.3s;
+}
 
-  <section class="highlights">
-    <div class="box">🎬 Cinematic Editing</div>
-    <div class="box">🎨 Color Grading</div>
-    <div class="box">⚡ Fast Turnaround</div>
-  </section>
-
-  <footer>© 2026 Nishant Kumar</footer>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
-
-<!-- ===============================
- about.html
- =============================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>About | Nishant Kumar</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <h1>Nishant Kumar</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="page">
-    <h2>About Me</h2>
-    <p>
-      I am Nishant Kumar, a passionate video editor and student. I specialize in
-      cinematic storytelling, YouTube edits, and short-form content.
-    </p>
-  </section>
-
-  <footer>© 2026 Nishant Kumar</footer>
-</body>
-</html>
-
-<!-- ===============================
- portfolio.html
- =============================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Portfolio | Nishant Kumar</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <h1>Nishant Kumar</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="page">
-    <h2>My Work</h2>
-    <div class="grid">
-      <div class="card">Cinematic Reel</div>
-      <div class="card">YouTube Edit</div>
-      <div class="card">Instagram Reels</div>
-    </div>
-  </section>
-
-  <footer>© 2026 Nishant Kumar</footer>
-</body>
-</html>
-
-<!-- ===============================
- contact.html
- =============================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Contact | Nishant Kumar</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <h1>Nishant Kumar</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="page">
-    <h2>Contact Me</h2>
-    <p>Email: nishantkumar784aa@gmail.com</p>
-  </section>
-
-  <footer>© 2026 Nishant Kumar</footer>
-</body>
-</html>
-
-<!-- ===============================
- assets/css/style.css
- =============================== -->
-<style>
-body{margin:0;font-family:Poppins,Arial;background:#0f172a;color:#e5e7eb}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#020617}
-.navbar ul{list-style:none;display:flex;gap:20px}
-.navbar a{color:#38bdf8;text-decoration:none}
-.hero{height:90vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#020617,#1e293b)}
-.hero-text{text-align:center}
-.btn{padding:12px 30px;background:#38bdf8;color:#000;border-radius:30px;text-decoration:none}
-.highlights{display:flex;justify-content:center;gap:20px;padding:40px}
-.box{background:#1e293b;padding:20px;border-radius:12px}
-.page{padding:60px;max-width:900px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#020617;padding:40px;border-radius:16px;text-align:center}
-footer{text-align:center;padding:20px;background:#020617}
-</style>
-
-<!-- ===============================
- assets/js/main.js
- =============================== -->
-<script>
-console.log('Website Loaded Successfully');
-</script>
+.card:hover::after {
+  opacity: 1;
+}
