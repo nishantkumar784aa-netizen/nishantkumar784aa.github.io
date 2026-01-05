@@ -1,186 +1,188 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!-- ===============================
+ PROFESSIONAL MULTI-PAGE PORTFOLIO WEBSITE
+ Name: Nishant Kumar
+ Role: Video Editor | Student
+ Hosting: GitHub Pages (FREE)
+ Editable: YES
+================================== -->
 
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
-  line-height: 1.6;
-}
+<!-- ===============================
+ FILE STRUCTURE (IMPORTANT)
+ ===============================
+ /
+ ├── index.html
+ ├── about.html
+ ├── portfolio.html
+ ├── contact.html
+ ├── assets/
+ │   ├── css/style.css
+ │   ├── js/main.js
+ │   └── images/
+ │       ├── hero.jpg
+ │       ├── profile.jpg
+ │       └── project1.jpg
+ -->
 
-/* ===============================
-   NAVBAR
-================================ */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  background: rgba(2, 6, 23, 0.9);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+<!-- ===============================
+ index.html (HOME PAGE)
+ =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Kumar | Video Editor</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Nishant Kumar</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-.navbar h1 {
-  color: #38bdf8;
-  font-size: 1.4rem;
-}
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Video Editor & Creative Storyteller</h2>
+      <p>Cinematic edits • Reels • YouTube videos</p>
+      <a href="portfolio.html" class="btn">View My Work</a>
+    </div>
+  </section>
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
+  <section class="highlights">
+    <div class="box">🎬 Cinematic Editing</div>
+    <div class="box">🎨 Color Grading</div>
+    <div class="box">⚡ Fast Turnaround</div>
+  </section>
 
-.navbar a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
+  <footer>© 2026 Nishant Kumar</footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 
-.navbar a:hover {
-  color: #38bdf8;
-}
+<!-- ===============================
+ about.html
+ =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Nishant Kumar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Nishant Kumar</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-/* ===============================
-   HERO SECTION
-================================ */
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(120deg, #020617, #1e293b);
-}
+  <section class="page">
+    <h2>About Me</h2>
+    <p>
+      I am Nishant Kumar, a passionate video editor and student. I specialize in
+      cinematic storytelling, YouTube edits, and short-form content.
+    </p>
+  </section>
 
-.hero-text {
-  text-align: center;
-  max-width: 700px;
-}
+  <footer>© 2026 Nishant Kumar</footer>
+</body>
+</html>
 
-.hero-text h2 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
+<!-- ===============================
+ portfolio.html
+ =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | Nishant Kumar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Nishant Kumar</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-.hero-text p {
-  color: #94a3b8;
-  margin-bottom: 25px;
-}
+  <section class="page">
+    <h2>My Work</h2>
+    <div class="grid">
+      <div class="card">Cinematic Reel</div>
+      <div class="card">YouTube Edit</div>
+      <div class="card">Instagram Reels</div>
+    </div>
+  </section>
 
-/* ===============================
-   BUTTON
-================================ */
-.btn {
-  padding: 12px 32px;
-  background: #38bdf8;
-  color: #020617;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+  <footer>© 2026 Nishant Kumar</footer>
+</body>
+</html>
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
-}
+<!-- ===============================
+ contact.html
+ =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Nishant Kumar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Nishant Kumar</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-/* ===============================
-   HIGHLIGHTS
-================================ */
-.highlights {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 50px 20px;
-}
+  <section class="page">
+    <h2>Contact Me</h2>
+    <p>Email: nishantkumar784aa@gmail.com</p>
+  </section>
 
-.box {
-  background: #020617;
-  padding: 25px;
-  border-radius: 16px;
-  min-width: 220px;
-  text-align: center;
-  transition: transform 0.3s;
-}
+  <footer>© 2026 Nishant Kumar</footer>
+</body>
+</html>
 
-.box:hover {
-  transform: translateY(-8px);
-}
+<!-- ===============================
+ assets/css/style.css
+ =============================== -->
+<style>
+body{margin:0;font-family:Poppins,Arial;background:#0f172a;color:#e5e7eb}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#020617}
+.navbar ul{list-style:none;display:flex;gap:20px}
+.navbar a{color:#38bdf8;text-decoration:none}
+.hero{height:90vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#020617,#1e293b)}
+.hero-text{text-align:center}
+.btn{padding:12px 30px;background:#38bdf8;color:#000;border-radius:30px;text-decoration:none}
+.highlights{display:flex;justify-content:center;gap:20px;padding:40px}
+.box{background:#1e293b;padding:20px;border-radius:12px}
+.page{padding:60px;max-width:900px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#020617;padding:40px;border-radius:16px;text-align:center}
+footer{text-align:center;padding:20px;background:#020617}
+</style>
 
-/* ===============================
-   PAGES
-================================ */
-.page {
-  padding: 70px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.page h2 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  border-left: 5px solid #38bdf8;
-  padding-left: 15px;
-}
-
-/* ===============================
-   PORTFOLIO GRID
-================================ */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: #020617;
-  padding: 50px 20px;
-  border-radius: 20px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-}
-
-/* ===============================
-   FOOTER
-================================ */
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #020617;
-  color: #94a3b8;
-  margin-top: 50px;
-}
-
-/* ===============================
-   RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .hero-text h2 {
-    font-size: 2.2rem;
-  }
-
-  .highlights {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+<!-- ===============================
+ assets/js/main.js
+ =============================== -->
+<script>
+console.log('Website Loaded Successfully');
+</script>
